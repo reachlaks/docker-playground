@@ -7,5 +7,17 @@ pipeline {
                 sh 'svn --version'
             }
         }
+         stage('Build') {
+            steps {
+                sh 'node --version'
+                sh 'svn --version'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'node --version'
+                sh 'svn --version'
+            }
+        }
     }
 }
